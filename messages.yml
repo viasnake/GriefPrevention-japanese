@@ -4,7 +4,7 @@ Messages:
   IgnoringClaims:
     Text: Now ignoring claims.
   SuccessfulAbandon:
-    Text: Claims abandoned.  You now have {0} available claim blocks.
+    Text: $7保護を削除しました。$e{0}$7ブロックの保護が可能です。
     Notes: '0: remaining blocks'
   RestoreNatureActivate:
     Text: Ready to restore some nature!  Right click to restore nature, and use /BasicClaims
@@ -139,14 +139,14 @@ Messages:
       {0}, chase him away, or admit defeat and walk away.
     Notes: '0: defender name'
   AbandonClaimMissing:
-    Text: Stand in the claim you want to delete, or consider /AbandonAllClaims.
+    Text: $7削除する保護エリアに立つか、$e/AbandonAllClaims$7 で全ての保護エリアを削除してください。
   NotYourClaim:
-    Text: This isn't your claim.
+    Text: $7ここはあなたの保護エリアではありません。
   DeleteTopLevelClaim:
-    Text: To delete a subdivision, stand inside it.  Otherwise, use /AbandonTopLevelClaim
+    Text: $7削除する区画に立つか、それ以外の場合は、$e/AbandonTopLevelClaim$7 で保護エリアと全ての区画を削除してください。
       to delete this claim and all subdivisions.
   AbandonSuccess:
-    Text: Claim abandoned.  You now have {0} available claim blocks.
+    Text: $7保護を削除しました。残り$e{0} ブロック$7の利用可能な保護ブロックが残っています。
     Notes: '0: remaining claim blocks'
   CantGrantThatPermission:
     Text: You can't grant a permission you don't have yourself.
@@ -207,7 +207,7 @@ Messages:
   ShovelBasicClaimMode:
     Text: Shovel returned to basic claims mode.
   RemainingBlocks:
-    Text: You may claim up to {0} more blocks.
+    Text: $7残り$e{0} ブロック$7保護可能です。
     Notes: '0: remaining blocks'
   CreativeBasicsVideo2:
     Text: 'Click for Land Claim Help: {0}'
@@ -242,11 +242,11 @@ Messages:
     Text: You can't place lava this close to {0}.
     Notes: '0: nearby player'
   TooFarAway:
-    Text: That's too far away.
+    Text: $7対象が遠すぎます。
   BlockNotClaimed:
-    Text: No one has claimed this block.
+    Text: $7このブロックは誰も保護していません。
   BlockClaimed:
-    Text: That block has been claimed by {0}.
+    Text: $7このブロックは $e{0} $7によって保護されています。
     Notes: '0: claim owner'
   SiegeNoShovel:
     Text: You can't use your shovel tool while involved in a siege.
@@ -256,44 +256,40 @@ Messages:
   NoCreateClaimPermission:
     Text: You don't have permission to claim land.
   ResizeNeedMoreBlocks:
-    Text: You don't have enough blocks for this size.  You need {0} more.
+    Text: $7このサイズに十分なブロックがありません。さらに$e{0} ブロック$7必要です。
     Notes: '0: how many needed'
   NoCreativeUnClaim:
     Text: You can't unclaim this land.  You can only make this claim larger or create
       additional claims.
   ClaimResizeSuccess:
-    Text: Claim resized.  {0} available claim blocks remaining.
+    Text: $7保護のサイズを変更しました。残り$e{0} ブロック$7の利用可能な保護ブロックが残っています。
     Notes: '0: remaining blocks'
   ResizeFailOverlap:
-    Text: Can't resize here because it would overlap another nearby claim.
+    Text: $7近くの別の保護と重複するため、ここでサイズを変更できません。
   ResizeStart:
-    Text: Resizing claim.  Use your shovel again at the new location for this corner.
+    Text: $7保護のサイズを変更する。この角を新たに設定する先で金のシャベルを再び設定してください。
   ResizeFailOverlapSubdivision:
-    Text: You can't create a subdivision here because it would overlap another subdivision.  Consider
-      /abandonclaim to delete it, or use your shovel at a corner to resize it.
+    Text: $7他の区画と重複するため、この場所に区画を設定することはできません。$e/abandonclaim $7で区画を削除するか、金のシャベルを使用して区画を変更してください。
   SubdivisionStart:
-    Text: Subdivision corner set!  Use your shovel at the location for the opposite
-      corner of this new subdivision.
+    Text: $7区画の角を設定しました！反対側の角で再び金のシャベルを使うことで区画を設定できます。キャンセルするには金のシャベル以外に持ち替えてください。
   CreateSubdivisionOverlap:
-    Text: Your selected area overlaps another subdivision.
+    Text: $7選択した範囲が別の区画と重複しています。
   SubdivisionSuccess:
-    Text: Subdivision created!  Use /trust to share it with friends.
+    Text: $7区画を作成しました！ $e/trust [プレイヤー名]$7で他のプレイヤーと保護を共有可能です。
   CreateClaimFailOverlap:
-    Text: You can't create a claim here because it would overlap your other claim.  Use
-      /abandonclaim to delete it, or use your shovel at a corner to resize it.
+    Text: $7他の保護エリアと重複するため、この場所を保護することはできません。$e/abandonclaim $7で保護エリアを削除するか、金のシャベルを使用して保護エリアを変更してください。
   CreateClaimFailOverlapOtherPlayer:
-    Text: You can't create a claim here because it would overlap {0}'s claim.
+    Text: $e{0}$7 の保護エリアと重複するため、この場所を保護することはできません。
     Notes: '0: other claim owner'
   ClaimsDisabledWorld:
-    Text: Land claims are disabled in this world.
+    Text: $cこのワールドでは保護が無効になっています。
   ClaimStart:
-    Text: Claim corner set!  Use the shovel again at the opposite corner to claim
-      a rectangle of land.  To cancel, put your shovel away.
+    Text: $7保護エリアの角を設定しました！反対側の角で再び金のシャベルを使うことで保護できます。キャンセルするには金のシャベル以外に持ち替えてください。
   NewClaimTooNarrow:
-    Text: This claim would be too small.  Any claim must be at least {0} blocks wide.
+    Text: $c保護エリアが小さすぎます。保護には最低でも{0} ブロックの幅が必要です。
     Notes: '0: minimum claim width'
   CreateClaimInsufficientBlocks:
-    Text: You don't have enough blocks to claim that entire area.  You need {0} more
+    Text: $c選択したエリアを保護するのに十分な保護可能ブロックがありません。さらに{0} ブロックが必要です。
       blocks.
     Notes: '0: additional blocks needed'
   AbandonClaimAdvertisement:
@@ -301,7 +297,7 @@ Messages:
   CreateClaimFailOverlapShort:
     Text: Your selected area overlaps an existing claim.
   CreateClaimSuccess:
-    Text: Claim created!  Use /trust to share it with friends.
+    Text: $7保護を作成しました！ $e/trust [プレイヤー名]$7で他のプレイヤーと保護を共有可能です。
   SiegeWinDoorsOpen:
     Text: Congratulations!  Buttons and levers are temporarily unlocked.
   RescueAbortedMoved:
@@ -319,21 +315,21 @@ Messages:
   NoBuildPvP:
     Text: You can't build in claims during PvP combat.
   NoBuildPermission:
-    Text: You don't have {0}'s permission to build here.
+    Text: $e{0} $7の保護エリアの建築権限がありません。
     Notes: '0: owner name'
   NonSiegeMaterial:
     Text: That material is too tough to break.
   NoOwnerBuildUnderSiege:
     Text: You can't make changes while under siege.
   NoAccessPermission:
-    Text: You don't have {0}'s permission to use that.
+    Text: $e{0} $7の保護エリアの使用権限がありません。
     Notes: '0: owner name.  access permission controls buttons, levers, and beds'
   NoContainersSiege:
     Text: This claim is under siege by {0}.  No one can access containers here right
       now.
     Notes: '0: attacker name'
   NoContainersPermission:
-    Text: You don't have {0}'s permission to use that.
+    Text: $e{0} $7の保護エリアの使用権限がありません。
     Notes: '0: owner''s name.  containers also include crafting blocks'
   OwnerNameForAdminClaims:
     Text: an administrator
@@ -344,7 +340,7 @@ Messages:
     Text: This claim has too many entities already.  Try enlarging the claim or removing
       some animals, monsters, paintings, or minecarts.
   YouHaveNoClaims:
-    Text: You don't have any land claims.
+    Text: $7所有している保護エリアがありません。
   ConfirmFluidRemoval:
     Text: Abandoning this claim will remove lava inside the claim.  If you're sure,
       use /AbandonClaim again.
@@ -361,9 +357,9 @@ Messages:
     Notes: This is a Java Regular Expression.  Look it up before editing!  It's used
       to tell players about the demo video when they ask how to claim land.
   NoBuildOutsideClaims:
-    Text: You can't build here unless you claim some land first.
+    Text: 最初に保護エリアを設定しないと、このブロックを編集することはできません。保護を行うには金のシャベルを使ってください。
   PlayerOfflineTime:
-    Text: '  Last login: {0} days ago.'
+    Text: '$7  最終ログイン - $e{0}日前'
     Notes: '0: number of full days since last login'
   BuildingOutsideClaims:
     Text: Other players can build here, too.  Consider creating a land claim to protect
@@ -488,13 +484,13 @@ Messages:
   HasSubclaimRestriction:
     Text: This subclaim does not inherit permissions from the parent
   StartBlockMath:
-    Text: '{0} blocks from play + {1} bonus = {2} total.'
+    Text: '$e プレイボーナス {0} ブロック$7 +$e 購入ボーナス {1} ブロック$7 =$e {2} ブロック'
   ClaimsListHeader:
-    Text: 'Claims:'
+    Text: ' $e保護一覧'
   ContinueBlockMath:
-    Text: ' (-{0} blocks)'
+    Text: ' (-{0} ブロック)'
   EndBlockMath:
-    Text: ' = {0} blocks left to spend'
+    Text: '$7 =$e {0} ブロック 保護可能'
   NoClaimDuringPvP:
     Text: You can't claim lands during PvP combat.
   UntrustAllOwnerOnly:
@@ -522,7 +518,7 @@ Messages:
     Text: This new size would be too small.  Claims must be at least {0} blocks wide.
     Notes: '0: minimum claim width'
   ResizeClaimInsufficientArea:
-    Text: This claim would be too small.  Any claim must use at least {0} total claim
+    Text: $7保護範囲が狭すぎます。合計$e {0} ブロック$7が保護可能です。
       blocks.
     Notes: '0: minimum claim area'
   NoProfanity:
