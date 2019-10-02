@@ -92,12 +92,12 @@ Messages:
   DeleteSuccess:
     Text: Claim deleted.
   CantDeleteAdminClaim:
-    Text: You don't have permission to delete administrative claims.
+    Text: No permission.
   DeleteAllSuccess:
     Text: Deleted all of {0}'s claims.
     Notes: '0: owner''s name'
   NoDeletePermission:
-    Text: You don't have permission to delete claims.
+    Text: No permission.
   AllAdminDeleted:
     Text: Deleted all administrative claims.
   AdjustBlocksSuccess:
@@ -143,8 +143,8 @@ Messages:
   NotYourClaim:
     Text: $7ここはあなたの保護エリアではありません。
   DeleteTopLevelClaim:
-    Text: $7削除する区画に立つか、それ以外の場合は、$e/AbandonTopLevelClaim$7 で保護エリアと全ての区画を削除してください。
-      to delete this claim and all subdivisions.
+    Text: $7削除する区画に立つか、それ以外の場合は、$e/AbandonTopLevelClaim$7 で保護エリアと全ての区画を削除してください。 to
+      delete this claim and all subdivisions.
   AbandonSuccess:
     Text: $7保護を削除しました。残り$e{0} ブロック$7の利用可能な保護ブロックが残っています。
     Notes: '0: remaining claim blocks'
@@ -210,10 +210,10 @@ Messages:
     Text: $7残り$e{0} ブロック$7保護可能です。
     Notes: '0: remaining blocks'
   CreativeBasicsVideo2:
-    Text: 'Click for Land Claim Help: {0}'
+    Text: '土地の保護に関するヘルプ: {0}'
     Notes: '{0}: video URL'
   SurvivalBasicsVideo2:
-    Text: 'Click for Land Claim Help: {0}'
+    Text: '土地の保護に関するヘルプ: {0}'
     Notes: '{0}: video URL'
   TrappedChatKeyword:
     Text: trapped;stuck
@@ -254,7 +254,7 @@ Messages:
     Text: Unable to restore.  {0} is in that chunk.
     Notes: '0: nearby player'
   NoCreateClaimPermission:
-    Text: You don't have permission to claim land.
+    Text: No permission.
   ResizeNeedMoreBlocks:
     Text: $7このサイズに十分なブロックがありません。さらに$e{0} ブロック$7必要です。
     Notes: '0: how many needed'
@@ -289,8 +289,7 @@ Messages:
     Text: $c保護エリアが小さすぎます。保護には最低でも{0} ブロックの幅が必要です。
     Notes: '0: minimum claim width'
   CreateClaimInsufficientBlocks:
-    Text: $c選択したエリアを保護するのに十分な保護可能ブロックがありません。さらに{0} ブロックが必要です。
-      blocks.
+    Text: $c選択したエリアを保護するのに十分な保護可能ブロックがありません。さらに{0} ブロックが必要です。 blocks.
     Notes: '0: additional blocks needed'
   AbandonClaimAdvertisement:
     Text: To delete another claim and free up some blocks, use /AbandonClaim.
@@ -359,7 +358,7 @@ Messages:
   NoBuildOutsideClaims:
     Text: 最初に保護エリアを設定しないと、このブロックを編集することはできません。保護を行うには金のシャベルを使ってください。
   PlayerOfflineTime:
-    Text: '$7  最終ログイン - $e{0}日前'
+    Text: $7  最終ログイン - $e{0}日前
     Notes: '0: number of full days since last login'
   BuildingOutsideClaims:
     Text: Other players can build here, too.  Consider creating a land claim to protect
@@ -383,10 +382,9 @@ Messages:
   IgnoreClaimsAdvertisement:
     Text: To override, use /IgnoreClaims.
   NoPermissionForCommand:
-    Text: You don't have permission to do that.
+    Text: No permission.
   ClaimsListNoPermission:
-    Text: You don't have permission to get information about another player's land
-      claims.
+    Text: No permission.
   ExplosivesDisabled:
     Text: This claim is now protected from explosions.  Use /ClaimExplosions again
       to disable.
@@ -425,7 +423,7 @@ Messages:
   AdvertiseACB:
     Text: You may use /ACB to give yourself more claim blocks.
   NotYourPet:
-    Text: That belongs to {0} until it's given to you with /GivePet.
+    Text: $e{0}$7が所有者です。$e/GivePet $7で所有権を渡すことができます。
     Notes: '0: owner name'
   PetGiveawayConfirmation:
     Text: Pet transferred.
@@ -444,7 +442,7 @@ Messages:
   CreateClaimFailOverlapRegion:
     Text: You can't claim all of this because you're not allowed to build here.
   ResizeFailOverlapRegion:
-    Text: You don't have permission to build there, so you can't claim that area.
+    Text: No permission.
   NoBuildPortalPermission:
     Text: You can't use this portal because you don't have {0}'s permission to build
       an exit portal in the destination land claim.
@@ -484,13 +482,13 @@ Messages:
   HasSubclaimRestriction:
     Text: This subclaim does not inherit permissions from the parent
   StartBlockMath:
-    Text: '$e プレイボーナス {0} ブロック$7 +$e 購入ボーナス {1} ブロック$7 =$e {2} ブロック'
+    Text: $e プレイボーナス {0} ブロック$7 +$e 購入ボーナス {1} ブロック$7 =$e {2} ブロック
   ClaimsListHeader:
     Text: ' $e保護一覧'
   ContinueBlockMath:
     Text: ' (-{0} ブロック)'
   EndBlockMath:
-    Text: '$7 =$e {0} ブロック 保護可能'
+    Text: $7 =$e {0} ブロック 保護可能
   NoClaimDuringPvP:
     Text: You can't claim lands during PvP combat.
   UntrustAllOwnerOnly:
@@ -518,8 +516,7 @@ Messages:
     Text: This new size would be too small.  Claims must be at least {0} blocks wide.
     Notes: '0: minimum claim width'
   ResizeClaimInsufficientArea:
-    Text: $7保護範囲が狭すぎます。合計$e {0} ブロック$7が保護可能です。
-      blocks.
+    Text: $7保護範囲が狭すぎます。合計$e {0} ブロック$7が保護可能です。 blocks.
     Notes: '0: minimum claim area'
   NoProfanity:
     Text: Please moderate your language.
